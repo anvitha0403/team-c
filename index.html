@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>team</title>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+           <div class="heading">The creative crew</div>
+           <div class="desc">
+               <div class="head">WHO WE ARE</div>
+               <div class="body">We are team of creatively diverse. driven. innovative individuals working in various locations from the world.</div>
+           </div>
+        </div>
+        <div class="contall ">
+            <div class="cont1" id="cont1">
+                <div class="img-cont" id="f">
+                    <div class="img-col">
+                        <img src="./photo1.png" alt="">
+                        <div class="text-col">PRODUCT OWNER</div>
+                    </div>
+                    <div class="row-text">Bill Mahoney</div>
+                </div>
+                <div class="img-cont" id="b">
+                    <div class="img-col">
+                        <img src="./photo2.png" alt="">
+                        <div class="text-col">ART DIRECTOR</div>
+                    </div>
+                    <div class="row-text">Saba Cabrera</div>
+                </div>
+            </div>
+            <div class="cont2" id="cont2">
+                <div class="img-cont">
+                    <div class="img-col">
+                        <img src="./photo3.png" alt="">
+                        <div class="text-col"> DEVELOPER</div>
+                    </div>
+                    <div class="row-text">Griff Richards</div>
+                </div>
+                <div class="img-cont">
+                    <div class="img-col">
+                        <img src="./photo4.png" alt="">
+                        <div class="text-col">TECH LEAD</div>
+                    </div>
+                    <div class="row-text">Shae Le</div>
+                </div>
+            </div>
+            <div class="cont3" id="cont3">
+                <div class="img-cont">
+                    <div class="img-col">
+                        <img src="./photo5.png" alt="">
+                        <div class="text-col">UX DESIGNER</div>
+                    </div>
+                    <div class="row-text">Skylah Lu</div>
+                </div>
+                <div class="img-cont">
+                    <div class="img-col">
+                        <img src="./photo6.png" alt="">
+                        <div class="text-col">DEVELOPER </div>
+                    </div>
+                    <div class="row-text">Jim harvey</div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    
+ <script>
+    function a(){
+         const mediaQuery = window.matchMedia('(max-width: 1000px)')
+         // Check if the media query is true
+         if (mediaQuery.matches) {
+             // Then trigger an alert
+             var flex1 = document.getElementById('f');
+             document.getElementById('cont2').appendChild(flex1)
+             var flex2 = document.getElementById('b')
+             document.getElementById('cont3').appendChild(flex2)
+
+         }
+         const mediaQuery2 = window.matchMedia('(min-width: 1001px)')
+         // Check if the media query is true
+         if (mediaQuery2.matches) {
+             // Then trigger an alert
+             var flex1 = document.getElementById('f');
+             document.getElementById('cont1').appendChild(flex1)
+             var flex2 = document.getElementById('b')
+             document.getElementById('cont1').appendChild(flex2)
+
+         }
+
+     }
+     
+     window.addEventListener('resize',a);
+     window.addEventListener('load',a);
+ </script>
+</body>
+</html>

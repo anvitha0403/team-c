@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=PT+Serif&family=Poppins&family=Raleway&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+*{
+    padding:0;
+    margin:0;
+}
+
+.img-cont{
+    margin-top:10vh;
+    display:flex;
+    flex-direction:column;
+    width:20vw;
+    
+}
+.row-text{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+.text-col{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+.img-col{
+   
+    display:flex;
+    flex-direction:row;
+   
+    
+}
+img{
+    width:100%;
+    object-fit: cover;
+}
+.text-col{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    
+}
+.cont1{
+  
+    display:flex;
+    flex-direction: column;
+}
+.cont2{
+   
+    
+    display:flex;
+    flex-direction: column;
+    padding-top:20vh;
+}
+.cont3{
+    display:flex;
+  
+    flex-direction: column;
+
+
+}
+.contall{
+    display:flex;
+    justify-content:center;
+   gap:70px;
+  
+    
+
+  
+   
+}
+.container{
+    width:80vw;
+    margin:auto;
+   
+   
+}
+.nav {
+    display:flex;
+    justify-content:space-around;
+    padding:30px;
+    text-align:center;
+}
+.heading {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+    padding:20px;
+}
+.body{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+}
+.head{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:1000px){
+    /* .cont1{
+        width:100%;
+        flex-direction: row;
+        flex: 0 0 100%;
+        position:absolute;
+        background-color: red;
+        display:none;
+
+    } */
+    .container{
+        width:90vw;
+        
+     
+
+       
+    }
+    .nav {
+        flex-direction: column;
+    }
+   
+.img-cont{
+    min-width:30vw;
+}
+.contall {
+    display: flex;
+   
+    width: 100%;
+   
+
+
+
+}
+ 
+}
